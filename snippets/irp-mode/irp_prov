@@ -1,7 +1,12 @@
 # -*- mode: snippet -*-
-# name: BEGIN_PROVIDER ... END_PROVIDER 
-# key: bp
+# name: provider
+# key: /prov
 # --
-BEGIN_PROVIDER [${1:integer}, ${2:var}]
-    $0
+BEGIN_PROIDER[ ${1:integer}, ${2:name}, ${3:1}]
+implicit none
+BEGIN_DOC
+! Documentation for ${1}
+! ${4:Documentation}
+END_DOC
+${5:code}
 END_PROVIDER
